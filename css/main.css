@@ -6,12 +6,50 @@
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
+    --text: "Montserrat", sans-serif;
+    --title: "Fraunces", serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hero-wrapper {
+    background-color: var(--cream);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;    
+}
+
+.hero-img-mobile {
+    width: 100%;
+}
+
+.hero-img-desktop {
+    display: none;
+}
+
+.hero-content {
+    padding: 1rem;
+
+}
+
+.content__category {
+    font-family: var(--text);
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
 }
 
 /* @media screen and (min-width: 1440px) {

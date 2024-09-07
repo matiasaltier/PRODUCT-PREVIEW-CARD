@@ -66,6 +66,10 @@
     font-size: 2rem;
 }
 
+.content__name:hover {
+    color: #1A4032;
+}
+
 .content__description {
     line-height: 23px;
     font-size: .875rem;
@@ -111,20 +115,29 @@
     font-family: var(--text);
     font-weight: 700;
     font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.content__btn:hover {
+    background-color: #1A4032;
 }
 
 @media screen and (min-width: 700px) {
     .hero {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        max-height: 450px;
     }
     .hero-img-mobile {
         display: none;
     }
     .hero-img-desktop {
         display: block;
-        width: 100%;;
+        width: 300px;
+        height: 450px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 }
